@@ -1,0 +1,408 @@
+
+.navbar {
+    background-color: #5d17e8;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .collapse{
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+   
+    .collapse a{
+       color: white;
+    }
+
+.pt1 {
+    width: 100%;
+    height: 350px;
+    flex-direction: row;
+    display: flex;
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -20px;
+}
+
+.logo {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    height: 350px;
+    justify-content: start;
+}
+
+    .foto{
+        flex-direction: row;
+        width: 50%;
+        height: 200px;
+        margin-left: 25%;
+    }
+        .foto img {
+            width: 100%;
+            margin-top: 6vh;
+        }
+
+    .frase{
+        flex-direction: row;
+        width: 50%;
+        height: 200px;
+        margin-left: 25%;
+    }
+
+        .frase h3 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 1vh;
+        }
+
+
+
+.botao {
+    flex-direction: row;
+    display: flex;
+    width: 50%;
+    height: 350px; 
+    justify-content: center;
+    align-items: center;
+}
+
+        .botao button {
+            width: 200px;
+            height: 60px;
+            border: none;
+            border-radius: 40px;
+            background-color: #5d17e8;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: white;
+        }
+
+        .button:hover{
+            background: #5d17e8;
+            color: #fff;
+            border-radius: 40px;
+            transition: 0.9s;
+            box-shadow: 0 0 10px #5d17e8, 0 0 40px #5d17e8, 0 0 70px #5d17e8;
+          }
+
+          .neon-blue:active{
+            color:#733be2; 
+            background: #000000;
+            border-radius: 40px;
+            transition: 0.9s;
+         }
+
+.frase1 {
+   flex-direction: row;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 300px;
+}
+
+
+        .frase1 h2 {
+            text-align: center;
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            flex-direction: row;
+            letter-spacing: 3px;
+        }
+
+.faixa {
+    width: 100%;
+    height: 60px;
+    background: rgb(0,74,173);
+    margin-bottom: -200px;
+    background: linear-gradient(90deg, rgba(0,74,173,1) 0%, rgba(86,0,185,1) 44%, rgba(203,108,230,1) 95%);
+}
+
+.quadros {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10vh;
+  
+}
+ 
+        .quadro1 {
+            width: 20%;
+            height: 100%;   
+            background-color: white;      
+            flex-direction: column;
+            display: flex;
+            box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.607), -10px 0 10px -5px rgba(0, 0, 0, 0.607);
+        }
+        .quadro2 {
+            width: 20%;
+            height: 100%;   
+            background-color: white;              
+            flex-direction: column;
+            display: flex;
+            box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.607), -10px 0 10px -5px rgba(0, 0, 0, 0.607);
+        }
+        .quadro3 {
+            width: 20%;
+            height: 100%;
+            background-color: white;        
+            flex-direction: column;
+            display: flex;
+            box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.607), -10px 0 10px -5px rgba(0, 0, 0, 0.607);
+        }
+
+            .titulo {
+                width: 100%;
+                height: 30%;
+               
+                display: flex;
+            }
+                .titulo h3 {
+                    text-align: start;
+                    font-family: "Orbitron", sans-serif;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                    letter-spacing: 2px;
+                    margin-left: 10px;
+                    margin-top: 7%;
+                    font-size: 25px;
+                    color: #5d17e8;
+                }
+
+            .desc {
+                width: 100%;
+                height: 70%;
+            }
+                .desc p {
+                    text-align: start;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 18px;
+                    font-display: unset;
+                    margin-left: 5%;
+                }
+
+.frase2 h2 {
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.section-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: black;
+}
+
+.linha-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 80%; /* Ajuste a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    margin-top: 10vh;
+}
+
+            .linha {
+                position: absolute;
+                top: 50%; /* Coloca a linha no meio dos ícones */
+                left: 0;
+                right: 0;
+                height: 3px;
+                background-color: black;
+                z-index: 2; /* Garante que a linha fique atrás dos ícones */
+            }
+
+            .item {
+                text-align: center;
+                z-index: 2; /* Garante que os ícones e textos fiquem na frente da linha */
+                background-color: white; /* Mantém um fundo branco para evitar sobreposição da linha */
+                width: 9%;
+    
+             
+            }
+
+            .item img {
+                width: 150px; /* Tamanho do ícone */
+                height: 150px;
+                border-radius: 50%; /* Deixa o ícone circular */
+                background-color: white;
+                /* Ajuste conforme necessário */
+                z-index: 2;
+                margin-right: 5px;
+            }
+
+            .item p {
+                margin-top: 10px;
+                font-size: 14px;
+                color: black;
+                z-index: 2;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+
+.projetos {
+    width: 100%;
+    height: 300px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+            .textoprojeto {
+             width: 55%;
+             height: 100%;
+             background-color: #5d17e8;
+             display: flex;
+             text-align: start;
+             justify-content: center;
+             align-items: center;
+            }
+
+                    .textoprojeto img {
+                    width: 350px;
+                    height: 350px;
+                    display: flex;
+                    margin-left: 30vh;
+                    margin-left: 3vh;
+                }
+
+                    .textoprojeto h1{
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    
+                    color: aliceblue;
+                    margin-left: 4vh;
+                    }
+
+                    .textoprojeto .vsf {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    
+                    color: aliceblue;
+                    margin-left: 4vh;
+                    }
+ 
+            .nossospjts {
+                width: 40%;
+                height: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+                    .nossospjts h1 {
+                    font-family: "Orbitron", sans-serif;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                    letter-spacing: 2px;
+                    font-size: 60px;
+                    margin-top: 10%;
+                    }
+
+
+.projetos2 {
+    width: 100%;
+    height: 300px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: start;
+}
+            .textoprojeto2 {
+             width: 55%;
+             height: 100%;
+             background-color: #5d17e8;
+             display: flex;
+             text-align: start;
+             justify-content: center;
+             align-items: center;
+            }
+
+            .imgprojeto2 img {
+                width: 350px;
+                height: 110%;
+                justify-content: start;
+                display: flex;
+                
+            }
+
+        .desc2 {
+            flex-direction: column;
+            width: 75%;
+            height: 100%;
+        }
+
+
+            .desc2 .vsf2 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                color: aliceblue;
+                margin-right: 5vh;
+                
+                margin-top: 5%;
+                }
+            
+            .desc2 h1{
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    margin-bottom: 3vh;
+                    color: aliceblue;
+                    
+                    margin-top: 5%;
+                 
+                    }
+    
+            .smtcrl {
+                flex-direction: row;
+                display: flex;
+            }
+
+
+            .smtcrl a {
+                margin-left: 30%;
+                margin-top: 3vh;
+            }
+
+            .smtcrl img {
+                width: 50px;
+                height: 50px;
+                margin-left: 40%;
+                margin-top: 5%;
+            }
