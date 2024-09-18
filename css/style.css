@@ -1,20 +1,81 @@
 
-.navbar {
-    background-color: #5d17e8;
+.navbarcrl {
+    background-color: transparent;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     display: flex;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+    position: fixed; /* Trocar para fixed */
+    top: 0;
+    width: 100%; /* Ocupa a largura total da tela */
+    z-index: 1000; /* Garanta que a navbar fique no topo de outros elementos */
+    transition:  0.8s ;
+    
+}
+
+
+.navbar {
+    background-color: #5d17e8;
+   justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: fixed; /* Trocar para fixed */
+    top: 0;
+    width: 100%; /* Ocupa a largura total da tela */
+    z-index: 1000; /* Garanta que a navbar fique no topo de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.8s ;
+}
+
+
+.navbar-rounded {
+    border-radius: 25px; /* Ajuste conforme necessário */
+    background-color: #5d17e8;
+    margin: 3px;
 
 }
 
-    .navbar-brand img {
-        width: 50px;
-        height: 50px;
-    }
+
+
+/* Definir tamanho da logomarca */
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo padrão dos links da navbar */
+.navbar-nav .nav-link {
+    color: white; /* Cor do texto */
+    position: relative;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Alterar cor ao passar o mouse */
+.navbar-nav .nav-link:hover {
+    color: #17003d; /* Cor do texto ao passar o mouse */
+}
+
+/* Adicionar animação de linha ao passar o mouse */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #17003d; /* Cor da linha */
+    transition: width 0.3s ease;
+    bottom: 0;
+    left: 0;
+}
+
+/* Expansão da linha ao passar o mouse */
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Expande a linha */
+}
 
     .collapse{
         justify-content: space-around;
@@ -756,3 +817,139 @@ footer {
     }
 
     
+    /* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar para dispositivos móveis */
+@media (max-width: 767px) {
+    .navbarcrl {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .navbar-nav {
+        display: block;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px;
+    }
+    
+    .collapse {
+        display: block;
+    }
+
+    .pt1 {
+        flex-direction: column;
+    }
+
+    .foto, .frase {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .botao button {
+        width: 80%;
+    }
+
+    .quadro1, .quadro2, .quadro3 {
+        width: 100%;
+    }
+
+    .container .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .textoprojeto img, .imgprojeto2 img {
+        width: 100%;
+    }
+
+    .desc2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .smtcrl a {
+        margin-left: 10%;
+    }
+
+    .empresas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ftsempre {
+        width: 80%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbarcrl {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-nav {
+        display: flex;
+    }
+
+    .botao {
+        width: 60%;
+    }
+
+    .textoprojeto img, .imgprojeto2 img {
+        width: 50%;
+    }
+}
+
+/* Estilos para desktop */
+@media (min-width: 1025px) {
+    .navbarcrl {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-nav {
+        display: flex;
+    }
+
+    .botao {
+        width: 50%;
+    }
+
+    .textoprojeto img, .imgprojeto2 img {
+        width: 350px;
+    }
+
+    .container .card {
+        width: 17%;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+    }
+}
