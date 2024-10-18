@@ -1,4 +1,5 @@
 
+
 .navbarcrl {
     background-color: transparent;
     justify-content: space-around;
@@ -291,33 +292,26 @@
     color: black;
 }
 
-.linha-container {
+.pontos {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    max-width: 80%; /* Ajuste a largura máxima do container */
-    margin: 0 auto; /* Centraliza o container */
-    margin-top: 10vh;
+    margin-top: 18vh;
+    
 }
-
-            .linha {
-                position: absolute;
-                top: 50%; /* Coloca a linha no meio dos ícones */
-                left: 0;
-                right: 0;
-                height: 3px;
-                background-color: black;
-                z-index: 2; /* Garante que a linha fique atrás dos ícones */
-            }
 
             .item {
                 text-align: center;
-                z-index: 2; /* Garante que os ícones e textos fiquem na frente da linha */
+                flex-direction: row;
                 background-color: white; /* Mantém um fundo branco para evitar sobreposição da linha */
                 width: 9%;
-    
-             
+                transition: transform 0.5s ease;
+            }
+            .item:hover{
+                transform: scale(1.1); 
             }
 
             .item img {
@@ -325,16 +319,19 @@
                 height: 150px;
                 border-radius: 50%; /* Deixa o ícone circular */
                 background-color: white;
-                /* Ajuste conforme necessário */
-                z-index: 2;
                 margin-right: 5px;
+                transition: transform 0.5s ;
             }
+            .item img:hover{
+                transform: scale(1.1); 
+            }
+
 
             .item p {
                 margin-top: 10px;
                 font-size: 14px;
                 color: black;
-                z-index: 2;
+               
                 font-family: "Poppins", sans-serif;
                 font-weight: 600;
                 font-style: normal;
@@ -342,8 +339,8 @@
 
 .projetos {
     width: 100%;
-    height: 300px;
-    margin-top: 10vh;
+    height: 250px;
+    margin-top: 30vh;
     display: flex;
     flex-direction: row;
 }
@@ -357,13 +354,19 @@
              align-items: center;
             }
 
+
                     .textoprojeto img {
                     width: 350px;
                     height: 350px;
                     display: flex;
                     margin-left: 30vh;
                     margin-left: 3vh;
+                    transition: transform 0.5s ease;
                 }
+                .textoprojeto img:hover{
+                    transform: scale(1.1); 
+                }
+                
 
                     .textoprojeto h1{
                     font-family: "Poppins", sans-serif;
@@ -424,8 +427,13 @@
                 height: 110%;
                 justify-content: start;
                 display: flex;
-                
+                transition: transform 0.5s ease;
             }
+            .imgprojeto2 :hover{
+                transform: scale(1.1); 
+            }
+                
+        
 
         .desc2 {
             flex-direction: column;
