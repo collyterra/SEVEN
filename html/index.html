@@ -127,6 +127,71 @@
 
     </div>
 
+
+    <div class="especialidades">
+
+      <div class="nomedaporra"><h2>Nossas especialidades</h2></div>
+      <div class="ag-format-container">
+        <div class="ag-courses_box">
+    
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Softwares 
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                
+                <span class="ag-courses-item_date">
+                  Desenvolvimento web e mobile
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Hardwares 
+              </div>
+              <div class="ag-courses-item_date-box">
+               
+                <span class="ag-courses-item_date">
+                  Arduino 
+                </span>
+              </div>
+            </a>
+          </div>
+      
+        
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Designer Digital 
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+              
+                <span class="ag-courses-item_date">
+                  identidades visuais
+                </span>
+              </div>
+            </a>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+
     <section id="projetos">
 
       <div class="projetos">
@@ -337,7 +402,75 @@
 
 
     <section id="parceiros">
-      <div class="parceiros">
+      
+      <div class="empresasss">
+      <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img src="../img/dynamo2.svg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+              
+                <div class="card__header-text">
+                  <h3 class="card__title"  style="color: rgb(159, 0, 0);">Dynamo</h3>            
+                  <span class="card__status">Tecnologia e negócios</span>
+                </div>
+              </div>
+              <p class="card__description">Empresa de tecnologia focada em automação e otimização de processos empresariais com IA.</p>
+            </div>
+          </a>      
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="../img/sunset.svg" class="card__image" alt="" />
+            <div class="card__overlay">        
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+              
+                <div class="card__header-text">
+                  <h3 class="card__title" style="color: orange;">Sunset</h3>
+                  <span class="card__status">Tecnologia e soluções</span>
+                </div>
+              </div>
+              <p class="card__description">Startup de tecnologia especializada em soluções de energia renovável e gestão eficiente de energia.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="../img/chronos.svg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+               
+                <div class="card__header-text">
+                  <h3 class="card__title"  style="color: rgb(12, 124, 77);">Chronos</h3>
+                  <span class="card__status">Tecnologia e redes sociais</span>
+                </div>
+              </div>
+              <p class="card__description">Empresa que oferece ferramentas para gestão de tempo e aumento de produtividade com base em algoritmos.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="../img/vertiços.svg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+  
+                <div class="card__header-text">
+                  <h3 class="card__title"  style="color: rgb(111, 16, 200);">Vértice</h3>
+                  <span class="card__status">Tecnologia e automação</span>
+                </div>          
+              </div>
+              <p class="card__description">Empresa de análise de dados e big data, ajudando empresas a tomar decisões estratégicas baseadas em informações precisas.</p>
+            </div>
+          </a>
+        </li>    
+      </ul>
+      <!-- <div class="parceiros">
         <div class="titucola">
           <h2>PARCEIROS</h2>
         </div>
@@ -347,7 +480,8 @@
         <div class="ftsempre"><img src="../img/sunset.svg" alt=""></div>
         <div class="ftsempre"><img src="../img/chronos.svg" alt=""></div>
         <div class="ftsempre"><img src="../img/vertiços.svg" alt=""></div>
-      </div>
+      </div> -->
+    </div>
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script> const swiper = new Swiper('.swiper-container', { slidesPerView: 3, spaceBetween: 10, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, }); </script>
@@ -371,6 +505,7 @@
             </div>
           </div>
           <div class="form">
+            
             <div class="contatoform">
               <form id="contactForm">
                 <label for="nome">Nome:</label><br>
@@ -383,12 +518,28 @@
                 <label for="mensagem">Mensagem:</label><br>
                 <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" id="liveToastBtn">Enviar</button>
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <img src="..." class="rounded me-2" alt="...">
+                      <strong class="me-auto">Bootstrap</strong>
+                      <small>11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Hello, world! This is a toast message.
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
+
+      
     </section>
 
     <script>
